@@ -1,16 +1,13 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
 import React  from 'react';
-
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
-
-
-  
   return (
 
-    <div className='container' >
-     <Navbar/>
+    <div className='app' >
+      <Navbar/>
+          
     </div>
 
   );
