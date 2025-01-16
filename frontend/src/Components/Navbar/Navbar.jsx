@@ -3,7 +3,7 @@ import './Navbar.css'
 import logo_light from '../../assets/logo-black.png';
 import search_icon_light from '../../assets/search-w.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faUser,faBookmark } from '@fortawesome/free-solid-svg-icons'
+import {  faUser,faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -19,17 +19,10 @@ const Navbar = () => {
         <a href='/recommendation'><li>Recommendation</li></a>
       </ul>
       <div className='navbar-right'>
-
-        <div className='search-box'>
-            <input type='text' placeholder='search'/>
-            <img src={search_icon_light} alt=''/>
-        </div>
-
-        
-        <a href='/sign'><button>Login</button></a>
+        <a href='/sign' className='sign'><button>Register</button></a>
         
         <div className="icon">
-            <FontAwesomeIcon icon={faBookmark} />
+            <FontAwesomeIcon icon={faShoppingCart} />
             <FontAwesomeIcon icon={faUser} />
         </div>
         

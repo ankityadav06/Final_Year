@@ -33,31 +33,12 @@
     border-radius: 50px;
     cursor: pointer;
 }
-.search-box{
-    display: flex;
-    align-items: center;
-    background: #242424;
-    padding: 10px 10px;
-    border-radius: 50px;
+.navbar button:hover{
+    background-color: #ff6347;
 }
-.search-box input{
-    padding: 6px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    color: #fff;
-    font-size: 18px;
-    max-width: 100px;
-}
-.search-box input ::placeholder{
-    color:#fff;
 
-}
-.search-box img{
-    width: 20px;
-    cursor: pointer;
+
     
-}
 .icon {
     display: flex; 
     gap: 20px; 
