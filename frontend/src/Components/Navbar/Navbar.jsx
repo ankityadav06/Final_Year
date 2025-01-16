@@ -10,13 +10,13 @@ import {  faUser,faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <img src={logo_light} alt='' className='logo'/>
+      <a href='/'><img src={logo_light} alt='' className='logo'/></a>
+
       <ul className='navbar-menu'>
-        <li>Home</li>
+        <a href='/' ><li>Home</li></a>
         <li>Project</li>
         <li>Top Courses</li>
-        <li>Recommendation</li>
-        
+        <a href='/recommendation'><li>Recommendation</li></a>
       </ul>
       <div className='navbar-right'>
 
@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
 
         
-        <button>Sign in </button>
+        <a href='/sign'><button>Login</button></a>
         
         <div className="icon">
             <FontAwesomeIcon icon={faBookmark} />
