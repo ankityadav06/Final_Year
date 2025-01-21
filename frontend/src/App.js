@@ -1,31 +1,38 @@
 import './App.css';
-import React  from 'react';
+import React from 'react';
 import Navbar from './Components/Navbar/Navbar';
-import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './Page/Home/Home';
 import Recommendation from './Page/Recommendation/Recommendation';
 import Register from './Page/Sign_page/Register';
 import Login from './Page/Sign_page/Login';
 
 function App() {
+  const location = useLocation();
+
+  // Define routes where the Navbar should be hidden
+  const hideNavbarRoutes = ['/sign', '/login'];
+  const hideNavbar = hideNavbarRoutes.includes(location.pathname);
+
   return (
-
-    <div className='app' >
-      <BrowserRouter>
-      <Navbar/>
+    <div className="app">
+      {/* Conditionally render Navbar */}
+      {!hideNavbar && <Navbar />}
       <Routes>
-        <Route path='/' element={<Home></Home>}/>
-        <Route path='/recommendation' element={<Recommendation></Recommendation>}/>
-        <Route path='/sign' element={<Register/>}/>
-        <Route path='/login' element={<Login></Login>} />
-
-
+        <Route path="/" element={<Home />} />
+        <Route path="/recommendation" element={<Recommendation />} />
+        <Route path="/sign" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-      </BrowserRouter>
-          
     </div>
-
   );
 }
 
-export default App;
+// Wrap `App` in a `BrowserRouter`
+export default function Main() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}

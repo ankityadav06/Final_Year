@@ -1,7 +1,6 @@
 import React from 'react'
 import './Navbar.css'
 import logo_light from '../../assets/logo-black.png';
-import search_icon_light from '../../assets/search-w.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faUser,faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,7 +13,7 @@ const Navbar = () => {
 
       <ul className='navbar-menu'>
         <a href='/' ><li>Home</li></a>
-        <li>Project</li>
+        <a href='/Course'><li>Course</li></a>
         <li>Top Courses</li>
         <a href='/recommendation'><li>Recommendation</li></a>
       </ul>
