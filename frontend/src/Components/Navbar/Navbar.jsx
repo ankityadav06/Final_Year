@@ -22,7 +22,7 @@ const Navbar = () => {
         
         <div className="icon">
             <FontAwesomeIcon icon={faShoppingCart} />
-            <FontAwesomeIcon icon={faUser} />
+            <a href='/profile'><FontAwesomeIcon icon={faUser} /></a> 
         </div>
         
       </div>
