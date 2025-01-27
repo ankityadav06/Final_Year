@@ -1,0 +1,127 @@
+/* Home.css */
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 90%; /* Max width for the card */
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set a fixed height for the image container */
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background-color: transparent; /* Make button background transparent */
+    border: none; /* Remove the border */
+    padding: 10px;
+    cursor: pointer;
+    color: white; /* Make sure the icon color is visible */
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+  
+  
+  
+  /* Ensure images are of the same size */
+  .image-container img {
+    width: 100%; /* Make image fill the container width */
+    height: 90%; /* Make image fill the container height */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+  }
+  
+
+
+.card_1 {
+    position: absolute;
+    left: 50%;
+    z-index: 20; /* Ensure the card is above the image */
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background for the card */
+    color: white; /* White text for good contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    width: 30%; /* Ensure card is not too wide */
+    text-align: left; /* Center text inside the card */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600; /* Bold subtitle */
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Add space between lines for better readability */
+  }
+  
+  .overlay-text {
+    position: absolute;
+    z-index: 10; /* Ensure the text is above the image */
+    width: 100%; /* Make the overlay text span the width of the container */
+    margin-top: 70px;
+    left: 30%;
+    transform: translateX(-75%);
+    color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    text-align: left;
+  }
+
+  /* General container for the card */
+.Card_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* General container for the cards */
+.Card_number {
+    display: flex;
+    justify-content: space-between; /* Distribute the cards horizontally */
+    align-items: center;
+    gap: 20px; /* Add space between each card */
+  }
+  
+  /* Style for each card */
+  .C1 {
+    background-color: #f1f1f1; /* Light grey background */
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text inside the column */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    width: 150px; /* Width of the card */
+    height: 80px; /* Height of the card */
+    text-align: center; /* Center text inside the card */
+  }
+  
+  /* Style for the number */
+  .number {
+    font-size: 2rem; /* Large font size for the number */
+    color: #333; /* Dark color for visibility */
+  }
+  
+  /* Style for the detail text */
+  .detail-text {
+    font-size: 1rem; /* Smaller text for the detail */
+    color: #777; /* Lighter color for the detail text */
+  }
+  

@@ -1,60 +1,72 @@
-
-.navbar{
-    padding: 20px 0px;
-    display:flex;
+/* Navbar.css */
+.navbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-
-.navbar .logo{
-    width: 120px;
-
-}
-.navbar-menu{
-    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 5px  10px;
+  }
+  
+  .navbar-logo .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .navbar-menu {
     list-style: none;
+    display: flex;
     gap: 20px;
-    color:#49557e;
-    font-size: 18px;
-}
-
-.navbar-right{
+  }
+  
+  .navbar-menu li {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #007bff;
+  }
+  
+  .navbar-right {
     display: flex;
     align-items: center;
-    gap: 40px; 
-}
-.navbar button{
-    background: transparent;
-    font-size: 16px;
-    color: #49557e;
-    border: 1px solid #242424;
-    padding: 10px 20px;
-    border-radius: 50px;
+    gap: 20px;
+  }
+  
+  .register-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
     cursor: pointer;
-}
-.navbar button:hover{
-    background-color: #ff6347;
-}
-
-
-    
-.icon {
-    display: flex; 
-    gap: 20px; 
-    align-items: center; 
-    justify-content: center; 
-    padding: 10px;
+    transition: background-color 0.3s;
   }
   
-.icon svg {
-    font-size: 20px; /* Set icon size */
-    color: #242424; /* Default color for icons */
-    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+  .register-btn:hover {
+    background-color: #0056b3;
   }
   
-.icon svg:hover {
-    color: #ff6347; /* Change color on hover */
-    transform: scale(1.2); /* Slightly enlarge on hover */
+  .navbar-icons .icon-link {
+    margin-left: 10px;
+  }
+  
+  .navbar-icons .icon {
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .navbar-icons .icon-link:hover .icon {
+    color: #007bff;
   }
   

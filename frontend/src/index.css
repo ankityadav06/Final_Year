@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Outfit;
+    font-family: 'Outfit', sans-serif; /* Added fallback font */
 }
 
-body{
+body {
     min-height: 100vh;
+    margin: 0;
+    font-size: 16px; /* Optional: base font size */
+    line-height: 1.5; /* Optional: improves readability */
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+a {
+    text-decoration: none;
+    color: inherit;
 }
-.app{
-    width: 90%;
+
+.app {
+    width: 100%;
     margin: auto;
 }
