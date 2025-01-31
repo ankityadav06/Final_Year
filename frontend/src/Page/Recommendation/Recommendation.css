@@ -1,0 +1,59 @@
+.ms-header {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .ms-header__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Gradient Text Styling */
+  .gradient-text {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Slider Container */
+  .ms-slider {
+    display: inline-block;
+    position: relative;
+    height: 1.2em;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+  
+  /* Words Inside the Slider */
+  .ms-slider__words {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ms-slider__word {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: inherit;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Fade-in/out Animation */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

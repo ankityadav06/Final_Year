@@ -95,9 +95,8 @@
   /* General container for the cards */
 .Card_number {
     display: flex;
-    justify-content: space-between; /* Distribute the cards horizontally */
     align-items: center;
-    gap: 20px; /* Add space between each card */
+    gap: 100px; /* Add space between each card */
   }
   
   /* Style for each card */
